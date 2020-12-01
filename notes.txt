@@ -1,3 +1,5 @@
 1) language -> interpretator -> Cpython vm-> byte code
 2) differences in py2 and py3
-3)
+3) python math functions
+4) a,b,c = 1, 2, 3
+5)
