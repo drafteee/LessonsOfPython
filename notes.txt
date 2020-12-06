@@ -3,3 +3,6 @@
 3) python math functions
 4) a,b,c = 1, 2, 3
 5) https://stackoverflow.com/questions/39983695/what-is-truthy-and-falsy-how-is-it-different-from-true-and-false
+
+6) jupyter notebook
+7)
