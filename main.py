@@ -1,3 +1,5 @@
+
+
 #name = input("What is your name?")
 #if(n:= len(name)) > 5:
 #  print(name, n)
@@ -69,3 +71,28 @@ def outer():
   print(x)
 
 outer()
+
+
+
+
+class Test:
+  def __init__(self, name):
+    self.__name = name
+
+  def run(self):
+    print('run', self.name)
+
+  @classmethod
+  def add(cls, num1, num2):
+    return cls(f'{num1 + num2}')
+
+  def __call__(self):
+    return('dsadsadas?????')
+
+test1 = Test('dsadsa')
+test2 = Test('11111')
+test3 = Test.add(1,2)
+print(dir(test1))
+print(test1())
+
+print(test1.__name, test2.__name, test3.__name)
