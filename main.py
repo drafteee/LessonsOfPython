@@ -143,14 +143,47 @@ def bye():
 bye()
 
 
-try:
-  age=int(input('Input value'))
-  print(age)
-  raise Exception('throw user exception')
-except (ValueError, TypeError, ZeroDivisionError) as err:
-  print(err)
-else:
-  print('thank you')
-finally:
-  print('end')
+# try:
+#   age=int(input('Input value'))
+#   print(age)
+#   raise Exception('throw user exception')
+# except (ValueError, TypeError, ZeroDivisionError) as err:
+#   print(err)
+# else:
+#   print('thank you')
+# finally:
+#   print('end')
    
+
+# def generator(num):
+#   for i in range(num):
+#     yield i*2
+
+# g = generator(100)
+# g1 = generator(1)
+
+# print(next(g))
+# print(next(g1))
+# print(next(g1))
+
+
+class Genet:
+  current = 0
+  def __init__(self, first, last):
+    self.first = first
+    self.last = last
+  
+  def __iter__(self):
+    return self
+
+  def __next__(self):
+    if Genet.current < self.last:
+      num = Genet.current
+      Genet.current +=1
+      return num
+    raise StopIteration
+
+gen = Genet(0,100)
+
+for i in gen:
+  print(i)
