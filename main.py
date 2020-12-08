@@ -7,12 +7,12 @@
 a,b,c, *other, five = 1,2,3,4,5
 print(a,b,c, other, five)
 
-list = [1, 2, 3, 4, 5]
-newList = list[:] #copy items, no equal prev list
+list0 = [1, 2, 3, 4, 5]
+newList = list0[:] #copy items, no equal prev list
 
-list.reverse() #reverse original
-revList = list[::-1] #reverse list and return new list
-print(list[0:5:2])
+list0.reverse() #reverse original
+revList = list0[::-1] #reverse list and return new list
+print(list0[0:5:2])
 
 dict1 = {
   'a': 1,
@@ -95,4 +95,34 @@ test3 = Test.add(1,2)
 print(dir(test1))
 print(test1())
 
-print(test1.__name, test2.__name, test3.__name)
+#print(test1.__name, test2.__name, test3.__name)
+
+
+list1 = [1,2,3]
+list2 = [10,11,12]
+print(zip(list1,list2))
+print(list(map(lambda item: item*2, list1)))
+
+a = [(0,2), (4,3), (10, -1), (9,9)]
+a.sort(key= lambda x:x[1])
+print(a) 
+
+list4 = [char for char in 'hello']
+list5 = [num*2 for num in range(100) if num %2==0]
+print(list5)
+
+simpleDict ={
+  'a': 1,
+  'b': 2
+}
+
+nextDict = {key: value**2 for key, value in simpleDict.items()}
+
+print(nextDict)
+
+myDict = {num: num*2 for num in [1,2,3]}
+print(myDict)
+
+duplicates = set([x for x in 'hello' if 'hello'.count(x) > 1])
+
+print(duplicates)
