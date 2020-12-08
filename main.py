@@ -141,3 +141,16 @@ def bye():
   print('hello')
 
 bye()
+
+
+try:
+  age=int(input('Input value'))
+  print(age)
+  raise Exception('throw user exception')
+except (ValueError, TypeError, ZeroDivisionError) as err:
+  print(err)
+else:
+  print('thank you')
+finally:
+  print('end')
+   
