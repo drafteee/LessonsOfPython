@@ -126,3 +126,18 @@ print(myDict)
 duplicates = set([x for x in 'hello' if 'hello'.count(x) > 1])
 
 print(duplicates)
+
+
+
+def decorator(func):
+  def wrapFunc():
+    print('dsadsa')
+    func()
+    print('dsadsads')
+  return wrapFunc
+
+@decorator
+def bye():
+  print('hello')
+
+bye()
