@@ -1,5 +1,6 @@
-
-
+import test
+from collections import Counter, defaultdict, OrderedDict
+from array import array
 #name = input("What is your name?")
 #if(n:= len(name)) > 5:
 #  print(name, n)
@@ -187,3 +188,29 @@ gen = Genet(0,100)
 
 for i in gen:
   print(i)
+
+
+# print(test.test.testtest())
+
+
+li = [1,1,2,3,4,5,6,7,7,7]
+
+print(Counter('sadsadwfdwafasf'))
+
+# dcit = defaultdict(int, {'a':1, 'b':2})
+# dcit = defaultdict(lambda: 5, {'a':1, 'b':2})
+dcit = defaultdict(lambda:'dsadsa', {'a':1, 'b':2})
+print(dcit['c'])
+
+
+d = OrderedDict()
+d['a'] = 1
+d['b'] = 2
+d2 = OrderedDict()
+d2['a'] = 1
+d2['b'] = 2
+print(d==dcit)
+
+
+arr = array('h',[1,2,3])
+print(arr[0])
