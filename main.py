@@ -1,6 +1,7 @@
 import test
 from collections import Counter, defaultdict, OrderedDict
 from array import array
+from main11_20 import startFile
 #name = input("What is your name?")
 #if(n:= len(name)) > 5:
 #  print(name, n)
@@ -214,3 +215,6 @@ print(d==dcit)
 
 arr = array('h',[1,2,3])
 print(arr[0])
+
+
+startFile()
