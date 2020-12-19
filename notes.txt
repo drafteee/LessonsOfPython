@@ -35,4 +35,4 @@ func1() - OK
 15) в robots.txt ??
 указывать весь api(dissalow, allow ) для googlebot и дрегих, чтобы они индексировали?
 16) web scraping?
-17)
+17)scrapy.org
